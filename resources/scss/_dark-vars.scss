@@ -1,0 +1,12 @@
+$theme-dark: hsl(0, 100%, 0%);
+$theme-light: hsl(0, 0%, 10%);
+$theme-complement: hsl(200, 65%, 45%);
+
+$font-color: hsl(200, 65%, 45%);
+$font-color-2: hsl(200, 30%, 100%);
+
+$link-color: lighten($theme-complement, 30%);
+$link-hover: lighten($theme-complement, 50%);
+$link-visited: $theme-complement;
+
+$theme-toggle: black;
