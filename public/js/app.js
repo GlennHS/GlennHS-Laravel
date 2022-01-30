@@ -19307,6 +19307,19 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/scss/fonts.scss":
+/*!***********************************!*\
+  !*** ./resources/scss/fonts.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/scss/master_dark.scss":
 /*!*****************************************!*\
   !*** ./resources/scss/master_dark.scss ***!
@@ -19649,6 +19662,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
+/******/ 			"css/fonts": 0,
 /******/ 			"css/master_light": 0,
 /******/ 			"css/master_dark": 0
 /******/ 		};
@@ -19700,9 +19714,10 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/master_light","css/master_dark"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/master_light","css/master_dark"], () => (__webpack_require__("./resources/scss/master_dark.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/master_light","css/master_dark"], () => (__webpack_require__("./resources/scss/master_light.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/fonts","css/master_light","css/master_dark"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/fonts","css/master_light","css/master_dark"], () => (__webpack_require__("./resources/scss/fonts.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/fonts","css/master_light","css/master_dark"], () => (__webpack_require__("./resources/scss/master_dark.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/fonts","css/master_light","css/master_dark"], () => (__webpack_require__("./resources/scss/master_light.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

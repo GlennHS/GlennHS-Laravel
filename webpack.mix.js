@@ -13,5 +13,6 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/index.js', 'public/js')
+    .sass('resources/scss/fonts.scss', 'public/css')
     .sass('resources/scss/master_dark.scss', 'public/css')
     .sass('resources/scss/master_light.scss', 'public/css');

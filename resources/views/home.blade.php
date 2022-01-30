@@ -8,10 +8,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-    <link rel="stylesheet" href="{{ url('css/master_light.css') }}">
-    <link rel="stylesheet" href="{{ url('css/master_dark.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="{{ url('css/fonts.css') }}">
+    <link theme rel="stylesheet" href="{{ url('css/master_light.css') }}">
 </head>
 
 <body>
@@ -25,7 +24,7 @@
                 <li><a href="#">Portfolio</a></li>
             </ul>
             <div id="theme-toggle">
-                <i class="fas fa-adjust" onclick="toggleTheme()"></i>
+                <i class="fas fa-adjust"></i>
             </div>
         </nav>
     </header>
@@ -202,59 +201,58 @@
         </div>
         <h2>Highlighted Projects</h2>
         <div class="carousel-container">
-            <h2 id="owl-slideme" class="sm-only">Slide Me!</h2>
-            <div id="owl-left" class="owl-nav"><i class="fas fa-caret-left"></i></div>
-            <div class="owl-carousel">
+            <div id="carousel-left" class="carousel-nav"><i class="fas fa-caret-left"></i></div>
+            <div class="carousel">
                 <div class="item" git="https://github.com/GlennHS/glenn-hs">
-                    <div class="owl-card-top">
+                    <div class="carousel-card-top">
                         <img src="{{ URL::asset('images/GHS.png') }}" alt="Project Logo"/>
                     </div>
-                    <div class="owl-card-bottom">
+                    <div class="carousel-card-bottom">
                         <h4>My Personal Site</h4>
                         <h5>Tech Stack</h5>
                         <ul>
                             <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JS</li>
-                            <li>Owl Carousel</li>
-                            <li>Sass</li>
+                            <li>CSS3/Sass</li>
+                            <li>JS/NodeJS</li>
+                            <li>Tiny Slider</li>
+                            <li>Laravel/PHP</li>
                         </ul>
-                        <p class="owl-description">You are here!</p>
+                        <p class="carousel-description">You are here!</p>
                     </div>
                 </div>
                 <div class="item" git="https://github.com/GlennHS/AEtherSlay">
-                    <div class="owl-card-top">
+                    <div class="carousel-card-top">
                         <img src="{{ URL::asset('images/Aetherslay.png') }}" alt="Project Logo"/>
                     </div>
-                    <div class="owl-card-bottom">
+                    <div class="carousel-card-bottom">
                         <h4>Ætherslay: A D&D Toolkit</h4>
                         <h5>Tech Stack</h5>
                         <ul>
                             <li>C#</li>
                             <li>.NET Framework</li>
                         </ul>
-                        <p class="owl-description">A D&D toolkit for players and dungeon masters.</p>
+                        <p class="carousel-description">A D&D toolkit for players and dungeon masters.</p>
                     </div>
                 </div>
                 <div class="item" git="https://github.com/GlennHS/DnDOneshotDecider">
-                    <div class="owl-card-top">
+                    <div class="carousel-card-top">
                         <img src="{{ URL::asset('images/ODS.png') }}" alt="Project Logo"/>
                     </div>
-                    <div class="owl-card-bottom">
+                    <div class="carousel-card-bottom">
                         <h4>D&D Oneshot Decider</h4>
                         <h5>Tech Stack</h5>
                         <ul>
                             <li>C#</li>
                             <li>.NET Framework</li>
                         </ul>
-                        <p class="owl-description">A personal project for quickly generating a D&D oneshot.</p>
+                        <p class="carousel-description">A personal project for quickly generating a D&D oneshot.</p>
                     </div>
                 </div>
                 <div class="item" git="https://github.com/GlennHS/Jace">
-                    <div class="owl-card-top">
+                    <div class="carousel-card-top">
                         <img src="{{ URL::asset('images/Jace.png') }}" alt="Project Logo" />
                     </div>
-                    <div class="owl-card-bottom">
+                    <div class="carousel-card-bottom">
                         <h4>Jace: D&D Discord Bot</h4>
                         <h5>Tech Stack</h5>
                         <ul>
@@ -262,12 +260,12 @@
                             <li>Discord.js</li>
                             <li>JS</li>
                         </ul>
-                        <p class="owl-description">An unfinished Discord bot for D&D made using NodeJS and Discord.js.
+                        <p class="carousel-description">An unfinished Discord bot for D&D made using NodeJS and Discord.js.
                         </p>
                     </div>
                 </div>
             </div>
-            <div id="owl-right" class="owl-nav"><i class="fas fa-caret-right"></i></div>
+            <div id="carousel-right" class="carousel-nav"><i class="fas fa-caret-right"></i></div>
         </div>
     </main>
 
@@ -279,9 +277,12 @@
         </div>
     </footer>
 
+    <script type="text/javascript">
+        var APP_URL = {!! json_encode(url('/')) !!}
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="{{ url('../js/index.js') }}" async defer></script>
+    <script src="{{ URL::asset('js/index.js') }}" async defer></script>
 </body>
 
 </html>
