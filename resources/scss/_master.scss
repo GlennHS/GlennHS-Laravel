@@ -308,7 +308,27 @@ a:visited {
 /* #endregion */
 
 /* #region Tiny Slider*/
+.carousel-container {
 
+  .carousel-nav {
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  #carousel-right {
+    text-align: right;
+  }
+
+  .tns-nav {
+    display: none;
+  }
+  
+  img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
 /* #endregion */
 
 // #region Media Queries
@@ -391,8 +411,8 @@ a:visited {
     }
   }
 
-  .owl-nav {
-    display: none;
+  .carousel-container {
+    display: none!important;
   }
   .sm-only{
     display: inline;

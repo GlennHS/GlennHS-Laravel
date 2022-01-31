@@ -6392,6 +6392,22 @@ a:visited {
 
 /* #endregion */
 /* #region Tiny Slider*/
+.carousel-container .carousel-nav {
+  font-size: 28px;
+  cursor: pointer;
+}
+.carousel-container #carousel-right {
+  text-align: right;
+}
+.carousel-container .tns-nav {
+  display: none;
+}
+.carousel-container img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
 /* #endregion */
 @media screen and (max-width: 1200px) {
   main {
@@ -6462,8 +6478,8 @@ a:visited {
     font-size: 0.8em;
   }
 
-  .owl-nav {
-    display: none;
+  .carousel-container {
+    display: none !important;
   }
 
   .sm-only {

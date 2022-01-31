@@ -2,8 +2,10 @@ const tns = require('tiny-slider');
 let usingLightTheme = true;
 
 const toggleTheme = () => {
-  usingLightTheme = !usingLightTheme
-  $("link[theme]").attr("href", `${APP_URL}/css/${usingLightTheme ? "master_light.css" : "master_dark.css"}`)
+  $("link[theme]").each((i,el) => {
+    if(el.hasAttribute("disabled")) el.removeAttribute("disabled");
+    else el.setAttribute("disabled", "true");
+  })
 }
 
 const renderView = () => {
@@ -23,11 +25,25 @@ const renderView = () => {
 
 $(document).ready( () => {
   var slider = tns.tns({
-    container: '.carousel-container',
+    container: '.carousel',
     items: 3,
-    slideBy: 'page',
-    autoplay: true
+    gutter: 20,
+    edgePadding: 20,
+    slideBy: 1,
+    mouseDrag: true,
+    nextButton: "#carousel-right",
+    prevButton: "#carousel-left",
+    speed: 400,
+    center: true,
+    loop: true
   });
+
+  $(".carousel-container").css({
+    "display": "grid",
+    "grid-template-columns": `30px ${$("main").width() - 60}px 30px`,
+    "align-items": "center",
+    "justify-content": "center"
+  })
 
   renderView()
   $(window).resize( renderView() )

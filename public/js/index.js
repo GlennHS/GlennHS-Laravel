@@ -3721,8 +3721,9 @@ var tns = __webpack_require__(/*! tiny-slider */ "./node_modules/tiny-slider/dis
 var usingLightTheme = true;
 
 var toggleTheme = function toggleTheme() {
-  usingLightTheme = !usingLightTheme;
-  $("link[theme]").attr("href", "".concat(APP_URL, "/css/").concat(usingLightTheme ? "master_light.css" : "master_dark.css"));
+  $("link[theme]").each(function (i, el) {
+    if (el.hasAttribute("disabled")) el.removeAttribute("disabled");else el.setAttribute("disabled", "true");
+  });
 };
 
 var renderView = function renderView() {
@@ -3742,10 +3743,23 @@ var renderView = function renderView() {
 
 $(document).ready(function () {
   var slider = tns.tns({
-    container: '.carousel-container',
+    container: '.carousel',
     items: 3,
-    slideBy: 'page',
-    autoplay: true
+    gutter: 20,
+    edgePadding: 20,
+    slideBy: 1,
+    mouseDrag: true,
+    nextButton: "#carousel-right",
+    prevButton: "#carousel-left",
+    speed: 400,
+    center: true,
+    loop: true
+  });
+  $(".carousel-container").css({
+    "display": "grid",
+    "grid-template-columns": "30px ".concat($("main").width() - 60, "px 30px"),
+    "align-items": "center",
+    "justify-content": "center"
   });
   renderView();
   $(window).resize(renderView());

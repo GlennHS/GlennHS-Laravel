@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="{{ url('css/fonts.css') }}">
-    <link theme rel="stylesheet" href="{{ url('css/master_light.css') }}">
+    <link preload theme rel="stylesheet" disabled href="{{ url('css/master_light.css') }}">
+    <link preload theme rel="stylesheet" href="{{ url('css/master_dark.css') }}">
 </head>
 
 <body>
@@ -203,9 +204,9 @@
         <div class="carousel-container">
             <div id="carousel-left" class="carousel-nav"><i class="fas fa-caret-left"></i></div>
             <div class="carousel">
-                <div class="item" git="https://github.com/GlennHS/glenn-hs">
+                <div class="item">
                     <div class="carousel-card-top">
-                        <img src="{{ URL::asset('images/GHS.png') }}" alt="Project Logo"/>
+                    <a href="https://github.com/GlennHS/glenn-hs" target="_blank"><img src="{{ URL::asset('images/GHS.png') }}" alt="Project Logo"/></a>
                     </div>
                     <div class="carousel-card-bottom">
                         <h4>My Personal Site</h4>
@@ -220,9 +221,9 @@
                         <p class="carousel-description">You are here!</p>
                     </div>
                 </div>
-                <div class="item" git="https://github.com/GlennHS/AEtherSlay">
+                <div class="item">
                     <div class="carousel-card-top">
-                        <img src="{{ URL::asset('images/Aetherslay.png') }}" alt="Project Logo"/>
+                        <a href="https://github.com/GlennHS/AEtherSlay" target="_blank"><img src="{{ URL::asset('images/Aetherslay.png') }}" alt="Project Logo"/></a>
                     </div>
                     <div class="carousel-card-bottom">
                         <h4>Ætherslay: A D&D Toolkit</h4>
@@ -234,9 +235,9 @@
                         <p class="carousel-description">A D&D toolkit for players and dungeon masters.</p>
                     </div>
                 </div>
-                <div class="item" git="https://github.com/GlennHS/DnDOneshotDecider">
+                <div class="item">
                     <div class="carousel-card-top">
-                        <img src="{{ URL::asset('images/ODS.png') }}" alt="Project Logo"/>
+                        <a href="https://github.com/GlennHS/DnDOneshotDecider" target="_blank"><img src="{{ URL::asset('images/ODS.png') }}" alt="Project Logo"/></a>
                     </div>
                     <div class="carousel-card-bottom">
                         <h4>D&D Oneshot Decider</h4>
@@ -248,9 +249,9 @@
                         <p class="carousel-description">A personal project for quickly generating a D&D oneshot.</p>
                     </div>
                 </div>
-                <div class="item" git="https://github.com/GlennHS/Jace">
+                <div class="item">
                     <div class="carousel-card-top">
-                        <img src="{{ URL::asset('images/Jace.png') }}" alt="Project Logo" />
+                        <a href="https://github.com/GlennHS/Jace" target="_blank"><img src="{{ URL::asset('images/Jace.png') }}" alt="Project Logo" /></a>
                     </div>
                     <div class="carousel-card-bottom">
                         <h4>Jace: D&D Discord Bot</h4>
