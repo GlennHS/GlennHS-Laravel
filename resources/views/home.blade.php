@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-    <link rel="stylesheet" href="{{ url('css/fonts.css') }}">
-    <link preload theme rel="stylesheet" disabled href="{{ url('css/master_light.css') }}">
-    <link preload theme rel="stylesheet" href="{{ url('css/master_dark.css') }}">
+    <link rel="stylesheet" href="{{ URL::aset('css/fonts.css') }}">
+    <link preload theme rel="stylesheet" disabled href="{{ URL::asset('css/master_light.css') }}">
+    <link preload theme rel="stylesheet" href="{{ URL::asset('css/master_dark.css') }}">
 </head>
 
 <body>
