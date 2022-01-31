@@ -6123,6 +6123,10 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+* {
+  transition: 0.3s ease-in;
+}
+
 body {
   background: #00aaff;
   color: #20205b;
@@ -6181,6 +6185,7 @@ nav #theme-toggle {
   top: 10px;
   right: 10%;
   color: white;
+  cursor: pointer;
 }
 
 main {
@@ -6256,6 +6261,10 @@ a:visited {
   border: solid 2px #ff99ee;
   border-radius: 50%;
   width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s linear;
 }
 
 #bio {
@@ -6311,6 +6320,7 @@ a:visited {
   margin: 0;
   padding: 0;
   z-index: 99;
+  transition: none;
 }
 
 /* #endregion */

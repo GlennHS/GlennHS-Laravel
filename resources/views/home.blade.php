@@ -32,7 +32,7 @@
     <main>
         <div id="profile-row">
             <div id="profile-img-container">
-                <img src="{{ URL::asset('images/GithubSelf.jpg') }}" id="profile-img" alt="A Picture Of Me!" />
+                <img src="{{ URL::asset('images/MeWinch.jpg') }}" id="profile-img" alt="A Picture Of Me!" />
             </div>
             <div id="bio">
                 <h2>Glenn Hamilton-Smith</h2>

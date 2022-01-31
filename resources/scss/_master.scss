@@ -7,7 +7,7 @@ $fa-font-path: "../webfonts";
 
 // #region DOM Elements
 * {
-  //transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 body {
@@ -45,7 +45,6 @@ nav {
       border-right: solid 2px darken($theme-complement, 20%);
       border-left: solid 2px darken($theme-complement, 20%);
       padding: 10px 15px;
-      //transition: 0.3s ease-in;
 
       &.logo {
         background: darken($theme-complement, 30%);
@@ -56,7 +55,6 @@ nav {
       a {
         color: #ffffff!important;
         text-decoration: none;
-        //transition: 0.3s ease-in;
         width: 100%;
         height: 100%;
       }
@@ -76,6 +74,7 @@ nav {
     top: 10px;
     right: 10%;
     color: $theme-toggle;
+    cursor: pointer;
   }
 }
 
@@ -155,7 +154,9 @@ a:visited {
     border: solid 2px $theme-complement;
     border-radius: 50%;
     width: 100%;
-    //transition: 1s linear;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: 1s linear;
   }
 }
 
@@ -217,7 +218,7 @@ a:visited {
   margin: 0;
   padding: 0;
   z-index: 99;
-  //transition: none;
+  transition: none;
 }
 /* #endregion */
 
