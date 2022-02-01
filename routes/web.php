@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Log;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,10 @@ Route::get('/', function () {
 });
 
 Route::get("/home", function() {
+    $path = storage_path()."/json/competencies.json";
+    $json = json_decode(file_get_contents($path), true);
+
+    Log::debug($json);
+
     return view("home");
 });

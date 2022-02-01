@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-    <link rel="stylesheet" href="{{ URL::asset('css/fonts.css') }}">
-    <link preload theme rel="stylesheet" disabled href="{{ URL::asset('css/master_light.css') }}">
-    <link preload theme rel="stylesheet" href="{{ URL::asset('css/master_dark.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/fonts.css') }}">
+    <link preload theme rel="stylesheet" disabled href="{{ mix('css/master_light.css') }}">
+    <link preload theme rel="stylesheet" href="{{ mix('css/master_dark.css') }}">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
     <main>
         <div id="profile-row">
             <div id="profile-img-container">
-                <img src="{{ URL::asset('images/MeWinch.jpg') }}" id="profile-img" alt="A Picture Of Me!" />
+                <img src="{{ asset('images/MeWinch.jpg') }}" id="profile-img" alt="A Picture Of Me!" />
             </div>
             <div id="bio">
                 <h2>Glenn Hamilton-Smith</h2>
@@ -78,7 +78,7 @@
                 </div>
             </div>
         </div>
-        <div id="competencies-container">
+        <!-- <div id="competencies-container">
             <h2>Competencies</h2>
             <div id="competencies">
                 <div class="competency">
@@ -198,6 +198,12 @@
                         <h5>Years: 3</h5>
                     </div>
                 </div>
+            </div>
+        </div> -->
+        <div id="competencies-container">
+            <h2>Competencies</h2>
+            <div id="competencies">
+                
             </div>
         </div>
         <h2>Highlighted Projects</h2>
