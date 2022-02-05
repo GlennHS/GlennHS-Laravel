@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-    <link rel="stylesheet" href="{{ url('css/fonts.css') }}">
-    <link preload theme rel="stylesheet" disabled href="{{ url('css/master_light.css') }}">
-    <link preload theme rel="stylesheet" href="{{ url('css/master_dark.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/fonts.css') }}">
+    <link preload theme rel="stylesheet" disabled href="{{ mix('css/master_light.css') }}">
+    <link preload theme rel="stylesheet" href="{{ mix('css/master_dark.css') }}">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
     <main>
         <div id="profile-row">
             <div id="profile-img-container">
-                <img src="{{ URL::asset('images/MeWinch.jpg') }}" id="profile-img" alt="A Picture Of Me!" />
+                <img src="{{ asset('images/MeWinch.jpg') }}" id="profile-img" alt="A Picture Of Me!" />
             </div>
             <div id="bio">
                 <h2>Glenn Hamilton-Smith</h2>
@@ -81,123 +81,9 @@
         <div id="competencies-container">
             <h2>Competencies</h2>
             <div id="competencies">
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/html.png') }}" />
-                    <div class="card-content">
-                        <h4>HTML5</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐⭐</span>
-                        <h5>Years: 9</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/css.png') }}" />
-                    <div class="card-content">
-                        <h4>CSS3</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐⭐</span>
-                        <h5>Years: 9</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/javascript.png') }}" />
-                    <div class="card-content">
-                        <h4>JavaScript</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐⭐</span>
-                        <h5>Years: 9</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/jquery.png') }}" />
-                    <div class="card-content">
-                        <h4>JQuery</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐⭐</span>
-                        <h5>Years: 7</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/react.png') }}" />
-                    <div class="card-content">
-                        <h4>React</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐</span>
-                        <h5>Years: 2</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/sass.png') }}" />
-                    <div class="card-content">
-                        <h4>Sass</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐⭐</span>
-                        <h5>Years: 4</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/bootstrap.png') }}" />
-                    <div class="card-content">
-                        <h4>Bootstrap</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐</span>
-                        <h5>Years: 5</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/materialize.png') }}" />
-                    <div class="card-content">
-                        <h4>Materialize</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐</span>
-                        <h5>Years: 3</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/python.png') }}" />
-                    <div class="card-content">
-                        <h4>Python</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐</span>
-                        <h5>Years: 5</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/cSharp.png') }}" />
-                    <div class="card-content">
-                        <h4>C#</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐</span>
-                        <h5>Years: 3</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/sql.png') }}" />
-                    <div class="card-content">
-                        <h4>SQL</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐</span>
-                        <h5>Years: 3</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/git.png') }}" />
-                    <div class="card-content">
-                        <h4>Git</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐⭐</span>
-                        <h5>Years: 5</h5>
-                    </div>
-                </div>
-                <div class="competency">
-                    <img src="{{ URL::asset('images/competencies/slack.png') }}" />
-                    <div class="card-content">
-                        <h4>Slack</h4>
-                        <h5>Skill:</h5>
-                        <span class="stars">⭐⭐⭐⭐</span>
-                        <h5>Years: 3</h5>
-                    </div>
-                </div>
+                @foreach ($competencies as $c)
+                    <x-competency :competency="$c" />
+                @endforeach
             </div>
         </div>
         <h2>Highlighted Projects</h2>
