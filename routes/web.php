@@ -15,14 +15,19 @@ use Illuminate\Support\Facades\Log;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get("/home", function() {
     $path = storage_path()."/json/competencies.json";
     $json = json_decode(file_get_contents($path), true);
 
-    Log::debug($json);
+    // Log::debug($json);
 
-    return view("home");
+    $competencies = [
+        [
+        "name"=>'HTML5',
+        "years"=>10,
+        "stars"=>5,
+        "imageLink"=>'./images/competencies/html.png'
+        ]
+    ];
+
+    return view("home", ['competencies'=>$json]);
 });

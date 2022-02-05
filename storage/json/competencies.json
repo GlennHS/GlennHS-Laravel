@@ -3,6 +3,79 @@
     "name": "HTML5",
     "stars": 5,
     "years": 10,
-    "image_link": "images/competencies/html.png"
+    "imageLink": "images/competencies/html.png"
+  },
+  {
+    "name": "CSS3",
+    "stars": 5,
+    "years": 10,
+    "imageLink": "images/competencies/css.png"
+  },
+  {
+    "name": "Javascript",
+    "stars": 5,
+    "years": 10,
+    "imageLink": "images/competencies/javascript.png"
+  },
+  {
+    "name": "Jquery",
+    "stars": 5,
+    "years": 7,
+    "imageLink": "images/competencies/jquery.png"
+  },
+  {
+    "name": "React",
+    "stars": 3,
+    "years": 2,
+    "imageLink": "images/competencies/react.png"
+  },
+  {
+    "name": "Sass",
+    "stars": 5,
+    "years": 4,
+    "imageLink": "images/competencies/sass.png"
+  },
+  {
+    "name": "Bootstrap",
+    "stars": 4,
+    "years": 5,
+    "imageLink": "images/competencies/bootstrap.png"
+  },
+  {
+    "name": "Materialize",
+    "stars": 4,
+    "years": 3,
+    "imageLink": "images/competencies/materialize.png"
+  },
+  {
+    "name": "Python",
+    "stars": 4,
+    "years": 5,
+    "imageLink": "images/competencies/python.png"
+  },
+  {
+    "name": "C#",
+    "stars": 4,
+    "years": 4,
+    "imageLink": "images/competencies/cSharp.png"
+  },
+  {
+    "name": "SQL",
+    "stars": 3,
+    "years": 3,
+    "imageLink": "images/competencies/sql.png"
+  },
+  {
+    "name": "Git",
+    "stars": 4,
+    "years": 5,
+    "imageLink": "images/competencies/git.png"
+  },
+  {
+    "name": "Slack",
+    "stars": 4,
+    "years": 3,
+    "imageLink": "images/competencies/slack.png"
   }
+
 ]

@@ -6,23 +6,23 @@ use Illuminate\View\Component;
 
 class Competency extends Component
 {
-    
+
     public $name;
     public $stars;
     public $years;
-    public $image_link;
+    public $imageLink;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($name, $stars, $years, $image_link)
+    public function __construct($competency)
     {
-        $this->name = $name;
-        $this->stars = $stars;
-        $this->years = $years;
-        $this->image_link = $image_link;
+        $this->name = $competency["name"];
+        $this->stars = $competency["stars"];
+        $this->years = $competency["years"];
+        $this->imageLink = $competency["imageLink"];
     }
 
     /**
