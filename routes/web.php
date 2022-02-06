@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,19 +16,16 @@ use Illuminate\Support\Facades\Log;
 */
 
 Route::get('/', function () {
-    $path = storage_path()."/json/competencies.json";
-    $json = json_decode(file_get_contents($path), true);
-
+    // $path = storage_path()."/json/competencies.json";
+    // $json = json_decode(file_get_contents($path), true);
     // Log::debug($json);
 
-    $competencies = [
-        [
-        "name"=>'HTML5',
-        "years"=>10,
-        "stars"=>5,
-        "imageLink"=>'./images/competencies/html.png'
-        ]
-    ];
+    $competencies = DB::select('select * from tbCompetencies', []);
+    $competencies = array_map(fn($e) => (array)$e, $competencies);
 
-    return view("home", ['competencies'=>$json]);
+    return view("home", ['competencies'=>$competencies]);
 });
+
+// Route::get('/write', function () {
+//     return view("writeBlogPost");
+// });
