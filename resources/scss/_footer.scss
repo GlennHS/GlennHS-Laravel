@@ -1,0 +1,13 @@
+@use 'sass:color';
+
+footer {
+  padding: 10px 0;
+  border-top: 1px solid $theme-complement;
+  background: darken($theme-dark, 10%);
+  width: 100%;
+  text-align: center;
+
+  span {
+    font-style: oblique;
+  }
+}

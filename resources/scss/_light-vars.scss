@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $theme-dark: hsl(200, 100%, 50%);
 $theme-light: hsl(180, 100%, 80%);
 $theme-complement: hsl(310, 100%, 80%);
@@ -8,5 +10,9 @@ $font-color-2: hsl(200, 30%, 20%);
 $link-color: darken($theme-complement, 15%);
 $link-hover: $theme-complement;
 $link-visited: darken($theme-complement, 45%);
+
+$nav-color: darken($theme-complement, 10%);
+$nav-disabled: color.scale($theme-complement, $saturation: -50%, $lightness: -20%);
+$nav-logo-background: lighten($theme-complement, 5%);
 
 $theme-toggle: white;

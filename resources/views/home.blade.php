@@ -15,20 +15,9 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li class="logo"><span>~Glenn HS~</span></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Portfolio</a></li>
-            </ul>
-            <div id="theme-toggle">
-                <i class="fas fa-adjust"></i>
-            </div>
-        </nav>
-    </header>
+    <nav>
+        <x-navbar chosen-page="Home" />
+    </nav>
     <main>
         <div id="profile-row">
             <div id="profile-img-container">
@@ -36,7 +25,6 @@
             </div>
             <div id="bio">
                 <h2>Glenn Hamilton-Smith</h2>
-                <!-- <h3>Martech Specialist @ <a href="https://clever-touch.com/" target="_blank">Clevertouch Marketing</a></h3> -->
                 <h3>Martech Specialist @ <a href="https://clever-touch.com/" target="_blank">Clevertouch Marketing</a></h3>
                 <h4>Motivated, Enthusiastic, Curious</h4>
                 <p>
@@ -156,12 +144,8 @@
         </div>
     </main>
 
-    <div class="spacer"></div>
-
     <footer>
-        <div id="footer-container">
-
-        </div>
+        <x-footer />
     </footer>
 
     <script type="text/javascript">

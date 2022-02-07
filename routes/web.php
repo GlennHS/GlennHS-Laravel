@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
+use App\Models\BlogPost;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,14 +17,18 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    // $path = storage_path()."/json/competencies.json";
-    // $json = json_decode(file_get_contents($path), true);
-    // Log::debug($json);
-
-    $competencies = DB::select('select * from tbCompetencies', []);
+    $competencies = DB::select('select * from competencies', []);
     $competencies = array_map(fn($e) => (array)$e, $competencies);
 
-    return view("home", ['competencies'=>$competencies]);
+    return view("home", [
+        'competencies' => $competencies
+    ]);
+});
+
+Route::get('/blog', function() {
+    return view('blog', [
+        "posts" => BlogPost::all(),
+    ]);
 });
 
 // Route::get('/write', function () {
